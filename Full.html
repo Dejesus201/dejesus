@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dejesus.bio</title>
+        <script src="https://kit.fontawesome.com/dae9d5ba6e.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            background-color: steelblue;
+            background-image:url(img/background_places.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .profile{
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: deepskyblue solid 10px;
+            border-radius:110px ;
+            box-shadow:skyblue  4px 4px 0 0;
+            float: left;
+        }
+        .profile2{
+            width: 55px;
+            border:darkcyan solid 5px;
+            border-radius:110px ;
+            float: left;
+        }
+        h1{
+            font-size: 300%;
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: whitesmoke;
+            margin-top: 7%;
+            margin-bottom: 5%;
+            margin-left: 25%;
+            display: inline-flex;
+            border: steelblue 5px solid;
+            background: steelblue;
+        }
+        h2{
+            font-size: 300%;
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: goldenrod;
+            margin-top: 5%;
+            margin-left: 38%;
+            text-align: center;
+            border: seagreen 5px solid;
+            background: seagreen;
+            display: inline-flex;
+        }
+        p{
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;  
+        }
+        .photo{
+            width: 27%;
+            border: darkslateblue solid 10px;
+            border-radius: 5px;
+            margin-right: 1px;
+        }
+        .photo2{
+            width:27%;
+            border: darkslateblue solid 10px;
+            border-radius: 5px;
+            margin-right: 15px;
+        }
+        .list{
+            margin-left: 10px;
+            margin-right: 10px;
+            border: darkslateblue solid 5px;
+            background-color: darkslateblue;
+            color: whitesmoke;
+        }
+        .mydiv{
+            border: solid rgb(53, 116, 168) 10px;
+            border-radius:  10px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+            background: rgb(53, 116, 168);
+        } 
+        .label-container{
+	    position:fixed;
+	    bottom:48px;
+	    right:105px;
+	    display:table;
+	    visibility: hidden;
+        }
+        .label-text{
+	    color:#FFF;
+    	background:rgba(51,51,51,0.5);
+	    display:table-cell;
+	    vertical-align:middle;
+	    padding:10px;
+	    border-radius:3px;
+        }
+        .label-arrow{
+	    display:table-cell;
+	    vertical-align:middle;
+	    color:#333;
+	    opacity:0.5;
+        }
+        .float{
+	    position:fixed;
+	    width:60px;
+	    height:60px;
+	    bottom:40px;
+	    right:40px;
+	    background-color:goldenrod;
+	    color:#FFF;
+	    border-radius:50px;
+	    text-align:center;
+        }
+        .my-float{
+	    font-size:24px;
+	    margin-top:18px;
+        }
+        a.float + div.label-container {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease;
+        }
+        a.float:hover + div.label-container{
+        visibility: visible;
+        opacity: 1;
+        }
+        header{
+            background: rgb(42, 160, 160);
+            border: darkcyan 5px solid;
+            border-radius: 50px;
+        }
+        header::after{
+            content:'';
+            display: table;
+            clear: both;
+        }
+        nav{
+            float: right;
+        }
+        nav ul{
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 21px;
+            margin-bottom: 20px;
+
+            position: relative;
+        }
+        nav a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace
+        }
+        nav a:hover{
+            color: goldenrod;
+            transition: 250ms;
+        }
+        .container{
+            width: 80%;
+            margin: 0%;
+        }
+
+    </style>
+    <body>
+        <header>
+            <img class="profile2" src="img/profilepicture.jpg">
+            <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="AboutMe.html">Introduction</a></li>
+                    <li><a href="FavoritePlaces.html">Favorite Place</a></li>
+                    <li><a href="FavoriteFood.html">Favorite Food</a></li>
+                </ul>
+            </nav>      
+            </div>
+            </header>   
+             <img class="profile" src="https://i.pinimg.com/564x/29/93/fd/2993fd151e2e1cab871aec155e22cbcc.jpg"><br>
+        <div class="mydiv">
+            <a href="MyHomePage.html" class="float">
+                <i class="fa fa-home my-float"></i>
+                </a>
+                <div class="label-container">
+                <div class="label-text">home</div>
+                <i class="label-arrow"></i>
+                </div>
+            <h1>Favorite Places</h1><br>
+            <p>Hello! This are my Favorite places that I have been and I want to go to if there is a chance.
+               since I was a kid I always dream about being wealthy and go to places not only in this country but around the world.
+               and now that Im near, I kept holding that dream because of how close I am from grabing it. 
+            </p>
+
+            <p class="list">Palawan</p>
+            
+            <p>Palawan is one of the places that I dreamed to go to. My Mom have been there and she said it has a good and relaxing ambiance
+                near the ocean. Seeing it in the photo that my Mom took, I was amazed and fall inlove in its clear seawater and white sand.
+            she also mention that there are only few tourist that hang in there so the area is quiet perfect for me to relax. </p><br>
+    
+            <br><img class="photo" style="margin-left: 5%;" src="https://www.zubludiving.com/images/Philippines/Palawan/Coron/Sangat-Reef-beach.jpg">
+            <img class="photo" src="https://www.zubludiving.com/images/Philippines/Palawan/Coron/Coron-Scuba-Diving-Philippines-Palawan.jpg">
+            <img class="photo" src="https://www.zubludiving.com/images/Philippines/Palawan/Coron/Twin-lagoon-Coron-island.jpg"><br>
+    
+            <br><p class="list">Kalibo, Aklan</p>
+            <p>Since I came back here in the urban city and start studying from my senior high up until now, I always think about going back to
+                Kalibo, Aklan. I sometimes lived there because my Father was raised there. And Everytime we visit my Grandparents we always timed
+                in the Ati-Atihan festival which is the most fun festival that you could ever attend. I just missed the feeling of it so I think of this
+                as my favorite places to go back. 
+            </p><br>
+    
+                <br><img class="photo2" style="margin-left: 30px;" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/11/58/fe/5c/vibrant-kalibo-landmark.jpg?w=700&h=-1&s=1">
+                <img class="photo2" src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0b/0a/a5/78/great-time-here-spent.jpg?w=1200&h=-1&s=1">
+                <img class="photo2" src="https://i2.wp.com/www.projectlupad.com/wp-content/uploads/2019/02/2019-Kalibo-Ati-Atihan-Festival-Aerial-View-Project-LUPAD-1.jpeg?w=1996&ssl=1"><br>
+    
+            <br><p class="list">Japan</p>  
+            <p>This time its not around the Philippines. This one is in my ultimate bucket list. Japan is the place that I want to go and spend months
+                this place sometimes inspires me to move forward towards my goals. this place has its amazing places to wonder. Its the place that I could settle
+                for a long time.
+            </p><br>
+    
+                <br><img class="photo2" style="margin-left: 30px;" src="https://www.commonwealthfund.org/sites/default/files/styles/countries_hero_desktop/public/country_image_Japan.jpg?h=fcdfd899&itok=YWWi9dFQ">
+                <img class="photo2" src="https://resources.matcha-jp.com/resize/720x2000/2019/12/20-93633.jpeg">
+                <img class="photo2" src="https://cdn-japantimes.com/wp-content/uploads/2021/09/np_file_112229.jpeg">
+                
+        </div>    
+    </body>
+    </html>
