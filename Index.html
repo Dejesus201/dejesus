@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dejesus.bio</title>
+        <script src="https://kit.fontawesome.com/dae9d5ba6e.js" crossorigin="anonymous"></script>
+    </head>
+    <style>
+        body{
+            background-color: burlywood;
+            background-image:url(img/Foodbackground.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .profile{
+            width: 200px;
+            height: 200px;
+            margin-left: 20px;
+            margin-top: 20px;
+            border: brown solid 10px;
+            border-radius:110px ;
+            box-shadow:lightsalmon  4px 4px 0 0;
+            float: left;
+        }
+        .profile2{
+            width: 55px;
+            border:darkcyan solid 5px;
+            border-radius:110px ;
+            float: left;
+        }
+        h1{
+            font-size: 300%;
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: whitesmoke;
+            margin-top: 7%;
+            margin-bottom: 5%;
+            margin-left: 25%;
+            display: inline-flex;
+            border: brown 5px solid;
+            background: brown;
+        }
+        h2{
+            font-size: 300%;
+            font-weight: bold;
+            font-family:'Courier New', Courier, monospace;
+            text-transform: uppercase;
+            font-weight: normal;
+            color: goldenrod;
+            margin-top: 5%;
+            margin-left: 38%;
+            text-align: center;
+            border: seagreen 5px solid;
+            background: seagreen;
+            display: inline-flex;
+        }
+        p{
+            margin-top: 10px;
+            text-align: center;
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: bold;  
+        }
+        .photo{
+            width: 50%;
+            border: black solid 10px;
+            border-radius: 5px;
+            margin-right: 1px;
+            
+        }
+        .list{
+            margin-left: 10px;
+            margin-right: 10px;
+            border: burlywood solid 5px;
+            background-color: burlywood;
+            color: whitesmoke;
+        }
+        .mydiv{
+            border: solid brown 10px;
+            border-radius: 10px;
+            margin-left: 20%;
+            margin-right: 20%;
+            margin-top: 10%;
+            background: brown;
+        } 
+        .label-container{
+	    position:fixed;
+	    bottom:48px;
+	    right:105px;
+	    display:table;
+	    visibility: hidden;
+        }
+        .label-text{
+	    color:#FFF;
+    	background:rgba(51,51,51,0.5);
+	    display:table-cell;
+	    vertical-align:middle;
+	    padding:10px;
+	    border-radius:3px;
+        }
+        .label-arrow{
+	    display:table-cell;
+	    vertical-align:middle;
+	    color:#333;
+	    opacity:0.5;
+        }
+        .float{
+	    position:fixed;
+	    width:60px;
+	    height:60px;
+	    bottom:40px;
+	    right:40px;
+	    background-color:goldenrod;
+	    color:#FFF;
+	    border-radius:50px;
+	    text-align:center;
+        }
+        .my-float{
+	    font-size:24px;
+	    margin-top:18px;
+        }
+        a.float + div.label-container {
+        visibility: hidden;
+        opacity: 0;
+        transition: visibility 0s, opacity 0.5s ease;
+        }
+        a.float:hover + div.label-container{
+        visibility: visible;
+        opacity: 1;
+        }
+        header{
+            background: rgb(42, 160, 160);
+            border: darkcyan 5px solid;
+            border-radius: 50px;
+        }
+        header::after{
+            content:'';
+            display: table;
+            clear: both;
+        }
+        nav{
+            float: right;
+        }
+        nav ul{
+            margin: 0%;
+            padding: 0%;
+            list-style: none;
+        }
+        nav li{
+            display: inline-block;
+            margin-left: 70px;
+            margin-top: 21px;
+            margin-bottom: 20px;
+
+            position: relative;
+        }
+        nav a{
+            color: rgb(255, 255, 255);
+            text-decoration: none;
+            font-size: 14px;
+            text-transform: uppercase;
+            font-family: 'Courier New', Courier, monospace
+        }
+        nav a:hover{
+            color: goldenrod;
+            transition: 250ms;
+        }
+        .container{
+            width: 80%;
+            margin: 0%;
+        }
+
+    </style>
+    <body>
+        <header>
+            <img class="profile2" src="img/profilepicture.jpg">
+            <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="AboutMe.html">Introduction</a></li>
+                    <li><a href="FavoritePlaces.html">Favorite Place</a></li>
+                    <li><a href="FavoriteFood.html">Favorite Food</a></li>
+                </ul>
+            </nav>      
+            </div>
+            </header>   
+             <img class="profile" src="https://media.istockphoto.com/vectors/chinese-food-icon-vector-id886791292?k=20&m=886791292&s=612x612&w=0&h=Cosf9QZTGk8Yuz3fZk-Bae4gMiIXQVzoPHAmBLLpqSo="><br>
+        <div class="mydiv">
+            <a href="MyHomePage.html" class="float">
+                <i class="fa fa-home my-float"></i>
+                </a>
+                <div class="label-container">
+                <div class="label-text">home</div>
+                <i class="label-arrow"></i>
+                </div>
+            <h1>Favorite Foods</h1><br>
+            <p>
+            </p>
+
+            <p class="list">Sinigang na Baboy</p>
+            
+            <p>Sinigang is a Filipino soup or stew characterized by its sour and savoury taste. It is most often associated with tamarind, although it can use other sour
+                 fruits and leaves as the souring agent. It is one of the more popular dishes in Filipino cuisine.<br>"Sinigang na baboy is my favorite dish.<br>
+                 My mom cooks it well that I could eat it for a days straight." </p><br>
+    
+            <br><img class="photo" style="margin-left: 23%;" src="https://www.lutongpinoyrecipe.com/wp-content/uploads/2020/12/lutong-pinoy-sinigang-na-baboy.jpg"><br>
+    
+            <br><p class="list">Adobo</p>
+            <p>Sinigang is a Filipino soup or stew characterized by its sour and savoury taste. It is most often associated with tamarind, although it can use other
+                 sour fruits and leaves as the souring agent. It is one of the more popular dishes in Filipino cuisine.<br>
+                 "I put this dish in the list of my favorites because who doesn't? Every Filipino love this dish, it's like a childhood dish." 
+            </p><br>
+    
+                <br><img class="photo" style="margin-left: 23%;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/Chicken_adobo.jpg/330px-Chicken_adobo.jpg"><br>
+    
+            <br><p class="list">Chopsuey</p>  
+            <p>Home » Recipes » Chop Suey
+                Chop Suey
+                 Jump to Recipe  Print Recipe
+                Chop Suey is a stir-fried vegetable dish that is cooked with meats such as chicken and pork. Shrimp and
+                 seafood can also be added. This chop suey recipe is special because
+                 it has almost every ingredient present. Chicken, pork, shrimp, and boiled quail eggs were all
+                  included in the recipe, along with fresh veggies.<br> "Lastly is chopsuey. for me like this one because the vegetable that are in the dish
+                  was all my favorites, it has its carrots, brocolli,bell peppers, cabbage leaves, mushrooms and some young corns!"
+            </p><br>
+    
+                <br><img class="photo" style="margin-left: 23%;" src="https://1.bp.blogspot.com/-aOFQ3bNByoA/XQ65k4YFT8I/AAAAAAAATQU/LrsDVjMIwDcdwDO7NLrzhpk32RvlNBUfQCLcBGAs/s1600/chop%2Bsuey.jpg">
+                
+        </div>    
+    </body>
+    </html>
